@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gamesuite - Simulator Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #1a1a2e;
+      color: #fefefe;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #16213e;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    header a {
+      color: #fefefe;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-size: 1rem;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+    header a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    .games-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0 0 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .game {
+      background: #0f3460;
+      border-radius: 8px;
+      padding: 1.5rem 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+      transition: background 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .game:hover {
+      background: #1f4068;
+    }
+    .game-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    .game-link {
+      background: #e94560;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1.2rem;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .game-link:hover {
+      background: #ff6f91;
+    }
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+      }
+      .games-list {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Simulator Games</h1>
+    <a href="index.html">&larr; Back to Categories</a>
+  </header>
+  <main>
+    <p>Discover and play our simulator games! Click a game to play on our other sites:</p>
+    <ul class="games-list">
+      <li class="game">
+        <span class="game-title">Bus Simulator</span>
+        <a class="game-link" href="https://warrior1711.github.io/bus-simulator/" target="_blank" rel="noopener">Play</a>
+      </li>
+      <li class="game">
+        <span class="game-title">Farming Simulator</span>
+        <a class="game-link" href="https://warrior1711.github.io/farming-simulator/" target="_blank" rel="noopener">Play</a>
+      </li>
+      <li class="game">
+        <span class="game-title">Flight Simulator</span>
+        <a class="game-link" href="https://warrior1711.github.io/flight-simulator/" target="_blank" rel="noopener">Play</a>
+      </li>
+      <!-- Add more simulator games below as needed -->
+    </ul>
+  </main>
+</body>
+</html>
