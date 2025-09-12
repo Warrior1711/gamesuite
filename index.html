@@ -1,1 +1,100 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gamesuite - Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #1a1a2e;
+      color: #fefefe;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #16213e;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+    .category {
+      background: #0f3460;
+      border-radius: 10px;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .category:hover {
+      transform: scale(1.05);
+      background: #1f4068;
+    }
+    .category h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.5rem;
+    }
+    .category p {
+      margin: 0;
+      opacity: 0.7;
+    }
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+      }
+      .categories {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gamesuite</h1>
+    <p>Choose a game category</p>
+  </header>
+  <main>
+    <section class="categories">
+      <div class="category" onclick="location.href='#simulator'">
+        <h2>Simulator</h2>
+        <p>Simulation games that mimic real-world activities.</p>
+      </div>
+      <div class="category" onclick="location.href='#casual'">
+        <h2>Casual</h2>
+        <p>Easy-to-play games for quick and fun sessions.</p>
+      </div>
+      <div class="category" onclick="location.href='#strategy'">
+        <h2>Strategy</h2>
+        <p>Plan, think, and outsmart your opponents!</p>
+      </div>
+      <div class="category" onclick="location.href='#adventure'">
+        <h2>Adventure</h2>
+        <p>TBA</p>
+      </div>
+      <div class="category" onclick="location.href='#action'">
+        <h2>Action</h2>
+        <p>TBA.</p>
+      </div>
+      <div class="category" onclick="location.href='#puzzle'">
+        <h2>Puzzle</h2>
+        <p>Challenge your mind with tricky puzzles.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
