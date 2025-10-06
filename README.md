@@ -5,4 +5,4 @@ Game dump Remaster/Remake
 
 we decided to move to google sites as its more practical 
 # LINK
-# (SOON)
+# https://sites.google.com/view/gamesuite/home
